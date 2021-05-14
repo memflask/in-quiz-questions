@@ -26,15 +26,18 @@
 ```bash
 find / -size +10M -exec ls -l {} ;
 ```
+
 - [ ] It finds all files using ls -l and hands them off to the find command to display.
 - [ ] It finds all files older than 10 minutes and long lists them using the ls command.
 - [x] It finds all files larger than 10 MB and long lists them using the ls command.
 - [ ] It uses the ls command to find all files in the filesystem matching the {} wildcard.
 
 #### Q5. What would this locate command show?
+
 ```bash
 locate --regexp '^/usr.*pixmaps.*jpg$'
 ```
+
 - [ ] all files in a directory named pixmaps
 - [ ] all files ending in ".jpg"
 - [x] all file paths that start with "/usr", include the word "pixmaps", and end with ".jpg"
@@ -50,7 +53,7 @@ locate --regexp '^/usr.*pixmaps.*jpg$'
 #### Q7. Which command will tell you how long a system has been running?
 
 - [ ] log
-- [x] uptime 
+- [x] uptime
 - [ ] runtime
 - [ ] access
 
@@ -84,12 +87,12 @@ ps -e --format uid,pid,ppid,%cpu,cmd
 - [ ] !
 - [ ] !!
 - [ ] !\*
-- [x] !ls 
+- [x] !ls
 
 #### Q12. The ssh-copy-id command copies **\_** to the remote host.
 
 - [ ] both private and public keys
-- [x] the ssh public key 
+- [x] the ssh public key
 - [ ] the ssh private key
 - [ ] a fingerprint file
 
@@ -111,8 +114,8 @@ ps -e --format uid,pid,ppid,%cpu,cmd
 
 - [ ] The tee command sends output only to STDOUT and STDERR.
 - [ ] A redirect sends output to STDOUT and a file, whereas a tee sends output only to STDOUT.
-- [x] Nothing, they are the same.
-- [ ] The tee command sends output to STDOUT and a file, whereas a redirect sends output only to a file.
+- [ ] Nothing, they are the same.
+- [x] The tee command sends output to STDOUT and a file, whereas a redirect sends output only to a file.
 
 #### Q16. What does the /etc/nsswitch.conf file manage?
 
@@ -121,16 +124,16 @@ ps -e --format uid,pid,ppid,%cpu,cmd
 - [ ] alternative DNS services
 - [x] sources for name service information
 
-
 #### Q17. Assume the variable myNumber holds a string consisting of 10 digits. What will this command output?
+
 ```bash
 echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 ```
+
 - [ ] It will only match digits—and since the string has only digits, the command will output the same number without changes.
 - [ ] It will output the same 10-digit number, but every digit will be inside parentheses.
 - [ ] It will output the entire 10-digit number inside parentheses.
 - [x] It will output the same 10-digit number, but the first 3 digits will be inside parentheses.
-
 
 #### Q18. Packages can be downloaded but not installed with yum or dnf by specifying which option?
 
@@ -139,8 +142,8 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [ ] -d
 - [x] --downloadonly
 
-
 #### Q19. What character class is equal to this set?
+
 [0-9]
 
 - [ ] [[:alnum:]]
@@ -149,6 +152,7 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [ ] [[:num:]]
 
 #### Q20. When archiving files, which command will preserve all file attributes including ACLs and SELinux security context?
+
 - [ ] zip
 - [x] tar
 - [ ] archive
@@ -168,8 +172,8 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [ ] vgappend
 - [x] vgextend
 
-
 #### Q23. When would this system cron job run its task?
+
 0 1 \* \* \*
 
 - [ ] every minute of the hour
@@ -182,7 +186,7 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [ ] netconf
 - [ ] ipconfig
 - [ ] ipman
-- [x] ip 
+- [x] ip
 
 #### Q25. You are managing an Apache web server on a system using SELinux. By default it cannot read personal webpages in users' home directories. What SELinux boolean would you set to allow this?
 
@@ -208,8 +212,8 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 #### Q28. Why is the passwd command able to modify the /etc/passwd file?
 
 - [ ] The kernel identifies it as one of the names of extended commands.
-- [x] It has the same name as the file it modifies.
-- [ ] It has the SUID permission mode and is owned by root.
+- [ ] It has the same name as the file it modifies.
+- [x] It has the SUID permission mode and is owned by root.
 - [ ] It is a system administration command.
 
 #### Q29. When a user deletes a file using the rm command, Linux will **\_**.
@@ -229,8 +233,8 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 #### Q31. What is one major difference between brace expansion and globs?
 
 - [ ] Globs create a list; brace expansion matches pattern.
-- [x] Brace expansion requires files to exist; globs do not.
-- [ ] Brace expansion creates a list; globs mart the list of pathnames.
+- [ ] Brace expansion requires files to exist; globs do not.
+- [x] Brace expansion creates a list; globs match the list of pathnames.
 - [ ] Globs get processes first and brace expansion later.
 
 #### Q32. To remove all ACLs from a directory , use setfacl with which options?
@@ -242,69 +246,104 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 
 #### Q33. Which choice will not print "Hello World" in the terminal?
 
-- [x]
+- [ ]
+
 ```bash
 myVar = 5
 [[ $myVar -lt 10 ]] && echo " Hello World"
 ```
-- [ ] 
+
+- [x]
+
 ```bash
 myVar = 5
 [[ $myVar -lt 10 ]] || echo " Hello World"
 ```
-- [] 
+
+- [x]
+
 ```bash
 myVar = 5
 [[ $myVar -gt 10 ]] && echo " Hello World"
 ```
-- [x]
+
+- [ ]
+
 ```bash
 myVar = 5
 [[ $myVar -gt 10 ]] || echo " Hello World"
 ```
 
 #### Q34. What is not inherited by child process?
+
 - [x] shell aliases
 - [ ] userid
 - [ ] environmental variables
 - [ ] scheduling priority
 
 #### Q35. What NFS option allows the root user to access NFS shares as the root user?
+
 - [ ] no_admin_squash
 - [ ] no_root_squash
 - [x] allow_root_access
 - [ ] all_squash
 
 #### Q36. You send an email to a remote client using the following syntax. What will be in the body of the email?
+
 ```bash
 date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 ```
+
 - [ ] "This is a remote test"
 - [ ] the date, the time, and the words "This is a remote test"
-- [x] The email subject shows "This is a remote test" but the body of the email will be empty. 
-- [ ] the current date and time
+- [ ] The email subject shows "This is a remote test" but the body of the email will be empty.
+- [x] the current date and time
 
 #### Q37. What is the /etc/hosts file used for?
+
 - [ ] resolving the local name
 - [ ] blocking sites using iptables
 - [x] setting the hostname
 - [ ] configuring DNS name servers
 
 #### Q38. In an extended regular expression, you would use (pattern){3} to match three instances of the pattern. How would you match the same thing with an extended glob?
+
 - [ ] 3(pattern)
 - [ ] {0,3}(pattern}
 - [x] Occurrence quantifiers are not supported in Bash's version of extended globs, so this is not possible.
 - [ ] {3}(pattern})
 
 #### Q39. When configuring a Samba share, how would the engineering group be specified in the smb.conf?
+
 - [ ] Samba uses Linux operating system groups from the /etc/group file; just specify the group name.
 - [x] It would be preceded by a percent sign (%), such as %engineers.
 - [ ] Use the group name by itself; Samba checks for its existence.
 - [ ] It would be preceded by an @ symbol, such as @engineering.
 
 #### Q40. To configure the Kerberos client, which command should you use to import the keytab file?
+
 - [ ] krb5-workstation
 - [x] ktutil
 - [ ] pam_krb5
 - [ ] kdb5_util
 
+#### Q41. To search from the current cursor position up to the beginning of the file using VIM, type **\_\_** and then the search criteria.
+
+- [x] ?
+- [ ] \
+- [ ] /
+- [ ] /search
+
+#### Q42. What is the job of the NetworkManager daemon?
+
+- [ ] It is a graphical tool that manages network connections, including bonding and wireless networks.
+- [ ] It is a security service that manages user access control of local network-aware services.
+- [ ] It attempts to keep an active network connection available at all times.
+- [x] It is a command-line tool that manages network connections.
+
+#### Q43. Why might would you use the usermod command ?
+
+- [ ] to log out a user
+- [ ] to lock a user's account
+- [x] to change global user account settings
+- [ ] to set a user's password

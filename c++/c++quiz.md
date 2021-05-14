@@ -112,10 +112,12 @@ v2->push_back(5);
 ```
 
 - [ ] `*v1:{1,2,3,4}; *v2:{5};`
-- [ ] `*v1:{1,2,3,4'5}; *v2:{1,2,3,4,5};`
+- [x] `*v1:{1,2,3,4'5}; *v2:{1,2,3,4,5};`
 - [ ] Error
-- [x] `*v1:{1,2,3,4}; *v2:{1,2,3,5};`
-   
+- [ ] `*v1:{1,2,3,4}; *v2:{1,2,3,5};`
+
+v1 and v2 point to the same vector.
+
 #### Q10. Which of the following is not a difference between a class and a struct?
 
 - [ ] Because structs are part of the C programming language, there are some complexity between C and C++ structs. This is not the case with classes.
@@ -992,3 +994,106 @@ std::memset(buff,20,50);
 - [x] `CustomData operator++(int);`
 
 [Reference](https://en.cppreference.com/w/cpp/language/operators)
+
+#### Q59. Which choice is not a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named center?
+
+```cpp
+coord center;
+center.x = 9;
+center.y = 3;
+```
+
+- [ ] A
+```cpp
+ struct coord{
+    int x;
+    int y;
+};
+typedef struct coord coord;
+```
+- [ ] B
+```cpp
+ typedef struct coord{
+    int x;
+    int y;
+} coord;
+```
+- [x] C
+```cpp 
+typedef struct coord{
+    int x;
+    int y;
+};
+```
+- [ ] D
+```cpp 
+typedef struct{
+    int x;
+    int y;
+} coord;
+```
+[Reference](https://stackoverflow.com/questions/18806392/typedef-struct-declarations/18806720)
+
+#### Q60. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?
+
+```cpp
+std::array<uint32_t, 50> my_array;
+```
+
+- [x] A
+```cpp
+std::sort(my_array.begin(), my_array.end(),
+    [](uint32_t a, uint32_t b) {
+        return a < b;
+    })
+```
+- [ ] B
+```cpp
+lambda(uint32_t a, uint32_t b){
+    return a < b;
+}
+std::sort(my_array.begin(), my_array.end(), lambda);
+```
+- [ ] C
+```cpp 
+std::sort(my_array.begin(), my_array.end(),
+    lambda(uint32_t a, uint32_t b){
+        return a < b;
+    })
+```
+- [ ] D
+```cpp 
+lambda(uint32_t a, uint32_t b){
+    return a < b;
+}
+std::sort(my_array.begin(), my_array.end(), &lambda);
+```
+[Reference](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160)
+
+#### Q61. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?
+
+- [ ] A
+```cpp
+void std::mutex::lock(){
+    while(!this->try_lock());
+}
+```
+- [ ] B
+```cpp
+void std::mutex::lock(){
+    return (this->try_lock());
+}
+```
+- [ ] C
+```cpp
+void std::mutex::lock(){
+    while(1)
+        this->try_lock();
+}
+```
+- [ ] D
+```cpp
+void std::mutex::lock(){
+    while(this->try_lock());
+}
+```

@@ -346,12 +346,12 @@ Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActi
 - [x] sealed class User
 - [ ] private sealed class User
 
-#### Q40. How would you write a delegeate named ResultCallback with an int parameter named responseCode?
+#### Q40. What is the correct syntax for a new generic list of strings named contacts? (similar to Q26)
 
-- [ ] `public delegate void ResultCallback<(int) responseCode>`;
-- [ ] `public delegate ResultCallback(int responseCode)`;
-- [x] `public delegate void ResultCallback(int responseCode)`;
-- [ ] `public void delegate ResultCallback<int responseCode>`;
+- [ ] var contacts = new List<string>();
+- [ ] var contacts = new List(string);
+- [ ] public List<string names> contacts = new List<string names>();
+- [ ] public List(string names) contacts = new List(string names);
 
 #### Q41. What is the difference between non-static and static classes?
 
@@ -413,3 +413,57 @@ Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActi
 - [ ] public static void IsvalidName(this string i, string value) {}
 - [ ] public string IsvalidName(this string i, string value) {}
 - [ ] public void IsvalidName(this string i, string value) {}
+
+#### Q49. How are C# classses limited?
+
+- [x] They do not support multiple inheritance.
+- [ ] They support multiple inheritance.
+- [ ] They can have only a set number of properties.
+- [ ] They can have only a set number of methods.
+
+#### Q50. What function do namespaces perform?
+- [ ] Namespaces calculate code coverage at runtime.
+- [ ] Namespaces compile application code together at compile time.
+- [ ] Namespaces group code together into a single repository.
+- [x] Namespaces separate code into groupings, control access, and void naming collisions.
+
+#### Q51. What is the correct way to write a public property with a private backing field?
+- [ ]
+```
+private int _password;
+pubic int Password = { get; set; }
+```
+- [ ]
+```private int _password;
+public int Password = _password;
+```
+- [ ]
+```
+private int _password;
+public int Password
+{
+get -> _password;
+set-> _password = value;
+}
+```
+- [x]
+```
+private int _password;
+public int Password
+{
+get { return _password; }
+set { _password = value; }
+}
+```
+
+#### Q52. What is a thread pool?
+- [ ] a collection of synchronous methods created during initialization that cannot be reused
+- [x] a collection of threads created during initialization that can be reused
+- [ ] a collection of threads only recognized at compile time that can be reused
+- [ ] a collection of asynchronous methods created at compile time that cannot be reused
+
+#### Q53. What is the most accurate description of a regular expression?
+- [ ] A regular expressions allows a variable to be passed by reference
+- [ ] A regular expression allows a class to conform to the Equatable protocol
+- [ ] A regular expression is a C# tool used to parse HTML
+- [x] A regular expression is a special text string for describing a search pattern

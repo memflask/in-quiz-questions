@@ -449,9 +449,9 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 ```
 
 - [ ] `itemprop="aggregateRating" itemref="http://schema.org/AggregateRating"`
-- [x] `itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating`
-- [ ] `itemid="aggregateRating" itemtype="http://schema.org/AggregateRating`
-- [ ] `itemid="aggregateRating" itemref="http://schema.org/AggregateRating`
+- [x] `itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating"`
+- [ ] `itemid="aggregateRating" itemtype="http://schema.org/AggregateRating"`
+- [ ] `itemid="aggregateRating" itemref="http://schema.org/AggregateRating"`
 
 #### Q29. Which HTML snippet links back to the very top of a webpage?
 
@@ -1029,3 +1029,142 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [ ] It has child content but no closing tag.
 
 [Reference (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)
+
+#### Q67. What is the purpose of async in this code? 
+
+`<script async src="myscript.js"></script>`
+
+- [ ] It downloads the script from the server when resources allow.
+- [ ] It runs the script after HTML parsing is complete.
+- [x] It runs the script when the script is ready.
+- [ ] It pauses the parsing of HTML code while the script runs.
+
+#### Q68. What does this code?
+`<audio autoplay loop src="sound.mp3" type="audio/mpeg"></audio>`
+- [ ] When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.
+- [x] The browser plays the sound once automatically in the background. The user has no control over the sound.
+- [ ] The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.
+- [ ] The browser plays the sound automatically and continuously in the background. The user has no control over the sound.
+
+#### Q69. What is the difference between the `<head>` and `<header>` tags?
+
+- [ ] There is only one `<head>` tag per page, while there may be many `<header>` tags.
+- [ ] The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.
+- [x] all of these answers
+- [ ] The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.
+
+#### Q70. In this code, what is the purpose of defer?
+
+`<script defer src="myscript.js"></script>`
+
+- [ ] It downloads the script from the server when resources allow.
+- [X] It runs the script after HTML parsing is complete.
+- [ ] It runs the script when the script is ready.
+- [ ] It pauses the parsing of HTML code while the script runs.
+
+#### Q71. The code below contains some errors. Which choice corrects all of the errors?
+
+```html
+<table>
+  <tr>Cell 1</tr>
+  <td>Cell 2</td>
+  <caption>A table</caption>
+</table>
+```
+- [ ]
+
+```HTML
+<caption>A table</caption>
+  <table>
+    <td>
+      <tr>Cell 1</tr>
+      <tr>Cell 2</tr>
+    </td>
+  </table>
+```
+
+- [ ]
+
+```HTML
+<caption>A table</caption>
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+```
+
+- [X]
+
+```HTML
+<table>
+  <caption>A table</caption>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+```
+
+- [ ]
+
+```HTML
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <caption>A table</caption>
+</table>
+```
+
+#### Q72. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?
+
+![Image of footer](images/ss-7.png?raw=true)
+
+- [ ] ```<a href="../work/info.html">See Information </a>```
+- [X] ```<a href="../info.html">See Information </a>```
+- [ ] ```<a href="../../info.html">See Information </a>```
+- [ ] ```<a href="info.html">See Information </a>```
+
+#### Q73. When should you use the `<article>` element?
+
+- [ ] For blog posts and other social media items
+- [ ] For the main content area of your website
+- [ ] When the content stands alone as a unit, is suitable for syndication, or is reusable
+- [ ] To associate comments with a blog post
+
+#### Q74. Which list comprises three empty elements?
+
+- [ ]
+
+```HTML
+<area> 
+<embed> 
+<strong>
+```
+
+- [ ]
+
+```HTML
+<input> 
+<br> 
+<p>
+```
+
+- [ ]
+
+```HTML
+<link> 
+<meta> 
+<title>
+```
+
+- [X]
+  
+```HTML
+<wbr> 
+<base> 
+<source>
+```

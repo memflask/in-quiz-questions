@@ -2,10 +2,10 @@
 
 #### Q1. You are part of data science team that is working for a national fast-food chain. You create a simple report that shows trend: Customers who visit the store more often and buy smaller meals spend more than customers who visit less frequently and buy larger meals. What is the most likely diagram that your team created?
 
-- [x] multiclass classification diagram
+- [ ] multiclass classification diagram
 - [ ] linear regression and scatter plots
 - [ ] pivot table
-- [ ] K-means cluster diagram
+- [x] K-means cluster diagram
 
 #### Q2. You work for an organization that sells a spam filtering service to large companies. Your organization wants to transition its product to use machine learning. It currently a list Of 250,00 keywords. If a message contains more than few of these keywords, then it is identified as spam. What would be one advantage of transitioning to machine learning?
 
@@ -379,10 +379,10 @@ Note: there are centres of clusters (C0, C1, C2).
 
 #### Q49. You work for a website that enables customers see all images of themselves on the internet by uploading one self-photo. Your data model uses 5 characteristics to match people to their foto: color, eye, gender, eyeglasses and facial hair. Your customers have been complaining that get tens of thousands of fotos without them. What is the problem?
 
--[ ] You are overfitting the model to the data 
--[ ] You need a smaller training set 
--[x] You are underfitting the model to the data 
--[ ] You need a larger training set
+- [ ] You are overfitting the model to the data 
+- [ ] You need a smaller training set 
+- [x] You are underfitting the model to the data 
+- [ ] You need a larger training set
 
 #### Q50. Your supervisor asks you to create a machine learning system that will help your human resources department classify jobs applicants into well defined groups. What type of system are you more likely to recommend?
 
@@ -569,3 +569,45 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] algorithms
 - [ ] time
 - [ ] computer scientists
+
+#### Q72. You need to select a machine learning process to run a distributed neural network on a mobile application. Which would you choose?
+
+- [ ] Scikit-learn
+- [ ] PyTorch
+- [x] Tensowflow Lite
+- [ ] Tensorflow
+
+#### Q73. Which choice is the best example of labeled data?
+
+- [ ] a spreadsheet
+- [ ] 20,000 recorded voicemail messages
+- [x] 100,000 images of automobiles
+- [ ] hundreds of gigabytes of audio files
+
+#### Q74. In statistics, what is defined as the probability of a hypothesis test of finding an effect - if there is an effect to be found?
+
+- [ ] confidence
+- [ ] alpha
+- [x] power
+- [ ] significance
+
+#### Q75. You want to create a machine learning algorithm to identify food recipes on the web. To do this, you create an algorithm that looks at different conditional probabilities. So if the post includes the word *flour*, it has a slightly stronger probability of being a recipe. If it contains both *flour* and *sugar*, it even more likely a recipe. What type of algorithm are you using?
+
+- [ ] naive Bayes classifier
+- [ ] K-nearest neighbor
+- [ ] multiclass classification
+- [x] decision tree
+
+#### Q76. What is lazy learning?
+
+- [ ] when the machine learning algorithms do most of the programming
+- [ ] when you don't do any data scrubbing
+- [x] when the learning happens continuously
+- [ ] when you run your computation in one big instance at the beginning
+
+#### Q77. What is Q-learning reinforcement learning?
+
+- [ ] supervised machine learning with rewards
+- [ ] a type of unsupervised learning that relies heavily on a well-established model
+- [ ] a type of reinforcement learning where accuracy degrades over time
+- [x] a type of reinforcement learning that focuses on rewards

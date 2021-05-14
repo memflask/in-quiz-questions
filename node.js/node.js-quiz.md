@@ -71,7 +71,7 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
  - [ ] node -p "process.os.cpus"
  - [x] node -p "os.cpus().length"
 
-#### Q12. Which of the following is a method on the console obejct?
+#### Q12. Which of the following is a method on the console object?
  - [ ] exit
  - [ ] test
  - [x] time
@@ -231,7 +231,7 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [ ] process
 - [ ] Buffer
 - [ ] root
-- [ ] require
+- [x] require
 
 ### Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?
 - [ ] node index.js -x
@@ -298,11 +298,4 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [x] read, eval, print, loop
 - [ ] run, edit, print, loop
 - [ ] read, extend, print, loop
-
-### Q45. Which statement is true when you run this code?
-`require('child_process').fork("script.js")`
-- [ ] The forked process shares the same VM thread with the parent process.
-- [ ] The forked process will have its own VM instance.
-- [ ] The forked process shares the event loop with the parent process.
-- [ ] A new VM instance is created, and the two VM instances will be shared between the forked process and the parent process.
 

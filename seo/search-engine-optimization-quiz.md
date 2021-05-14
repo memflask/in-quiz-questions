@@ -43,26 +43,26 @@
 - [x] Google Trends
 
 #### Q8. You want to block crawlers from accessing your entire website. What robots.txt entry would you use?
-- [ ]
-```markdown
-User-agent: Allbots
-Disallow: \*
-```
-- [ ]
-```markdown
-User-agent: /
-Disallow: \*
-```
-- [ ]
-```markdown
-User-agent: /
-Disallow:
-```
-- [x]
-```markdown
-User-agent: \*
-Disallow: /
-```
+- [ ] 
+   ```markdown
+      User-agent: Allbots
+      Disallow: \*
+   ```
+- [ ] 
+   ```markdown
+      User-agent: /
+      Disallow: \*
+   ```
+- [ ] 
+   ```markdown
+      User-agent: /
+      Disallow:
+   ```
+- [x] 
+   ```markdown
+      User-agent: \*
+      Disallow: /
+   ```
 
 #### Q9. Which results is most likely if you use an interstitial pop-up that requires a user to take action before you load the content of the page?
 - [ ] Both the pop-up and the content of the page will be indexed
@@ -120,42 +120,42 @@ Disallow: /
 - [ ] `<a href="../category-2/page">`
 
 #### Q18. Which choice represents the best header structure?
-- [ ]
-```markdown
-H1: How to Bak Bagels
-H2: Ingredients
-H3: Dry Ingredients
-H4: Wet Ingredients
-H2: Instructions
-H6: Reviews
-```
-- [ ]
-```markdown
-H1: How to Bak Bagels
-H1: Ingredients
-H1: Dry Ingredients
-H1: Wet Ingredients
-H1: Instructions
-H2: Reviews
-```
-- [ ]
-```markdown
-H1: How to Bak Bagels
-H2: Ingredients
-H3: Dry Ingredients
-H3: Wet Ingredients
-H2: Instructions
-H2: Reviews
-```
-- [x]
-```markdown
-H1: How to Bak Bagels
-H2: Ingredients
-H4: Dry Ingredients
-H5: Wet Ingredients
-H6: Instructions
-H1: Reviews
-```
+- [ ] 
+   ```markdown
+      H1: How to Bak Bagels
+      H2: Ingredients
+      H3: Dry Ingredients
+      H4: Wet Ingredients
+      H2: Instructions
+      H6: Reviews
+   ```
+- [ ] 
+   ```markdown
+      H1: How to Bak Bagels
+      H1: Ingredients
+      H1: Dry Ingredients
+      H1: Wet Ingredients
+      H1: Instructions
+      H2: Reviews
+   ```
+- [ ] 
+   ```markdown
+      H1: How to Bak Bagels
+      H2: Ingredients
+      H3: Dry Ingredients
+      H3: Wet Ingredients
+      H2: Instructions
+      H2: Reviews
+   ```
+- [x] 
+   ```markdown
+      H1: How to Bak Bagels
+      H2: Ingredients
+      H4: Dry Ingredients
+      H5: Wet Ingredients
+      H6: Instructions
+      H1: Reviews
+   ```
 
 #### Q19. All byline dates articles are suddenly no longer visible on a website's listing within Google Search. Assuming no changes have been made to the site programming or content, what is the most likely cause?
 - [ ] The site has been delisted from Google Search
@@ -222,3 +222,155 @@ H1: Reviews
 - [ ] CTR
 - [ ] PPC
 - [ ] LSI
+
+#### Q30. How do keywords change as people progress through the buying cycle?
+- [ ] They move from simple to more comples as searchers gather more information and then refine their choices.
+- [ ] The stay simple, as searchers try to use as few words as possible.
+- [ ] The keywords do not change much at all.
+- [ ] They move from complex to simple, as searchers find answers to their questions.
+
+#### Q31. Which technique is an example of black hat SEO?
+- [ ] cloaking
+- [ ] keyword research
+- [ ] useful content
+- [ ] on-page optimization
+
+#### Q32. A local accountant wants to start attracting more business directly from Google organic search. What is the best piece of advice to give to her?
+- [ ] Use the pharse "local accountant" as a keyword to focus her website on.
+- [ ] Focus on short-tail keywords.
+- [ ] Register her business with a Google My Business account.
+- [ ] Leave a link to her website in the blog comments of popular accounting websites.
+
+#### Q33. What is the anchor text in this code sample?
+```<a href="catalog/gloves.html">Blue Gloves</a>```
+- [ ] Blue Gloves
+- [ ] href
+- [ ] catalog/
+- [ ] gloves.html
+
+#### Q34. ________ analysis allows you to review requests made to your web server to identify insights such as how ofter a crawler arrives, what pages have 404 errors, and most crawled pages
+- [ ] Log file
+- [ ] HTTP/2
+- [ ] Cron job
+- [ ] Resource packet
+
+#### Q35. Which page title references content that is evergreen
+- [ ] Mega List of Teams Going to the Olympics
+- [ ] Complete Coverage of Microsoft's Latest Announcement
+- [ ] The Future of SEO in 2020
+- [ ] How to Reheat Pizza
+
+#### Q36. You load a page and start reading an article, and suddenly the content on the page moves. What metric is used to quantify this impact on user experience?
+- [ ] First Meaningful Paint (FMP)
+- [ ] Recalculated Style Timing (RST)
+- [ ] Latent Loading Signal (LLS)
+- [ ] Cumulative Layout Shift (CLS)
+
+#### Q37. What is this code is an example of?
+```<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "url": "http://www.domain.com",
+   "name": "Bradley Corp.",
+   "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-555-5555",
+      "contactType": "Customer service"
+    }
+}
+</script>
+```
+
+- [ ] meta tag
+- [ ] HTTP response
+- [ ] XML sitemap
+- [ ] structured data
+
+#### Q38. Which search query would be most difficult to determine search intent?
+- [ ] XBox live coupon
+- [x] Microsoft Office 365
+- [ ] LinkedIn login
+- [ ] LAX airport directions
+
+#### Q39. When you conduct a search, what are the bolded words within the search listing description?
+- [ ] suggested search terms
+- [ ] related search queries
+- [x] keywords that match the search query
+- [ ] words with a <b> tag assigned in their meta description
+
+#### Q40. Which acronym is used to describe the page a user sees after submitting a search?
+- [x] SERT (Search Engine Results Page)
+- [ ] INDX
+- [ ] PARS
+- [ ] SEM
+
+#### Q41. Which statement is true regarding the use of social signals, such as LinkedIn shares, by Google in its ranking algorithm?
+- [ ] Google does not use social signals to determine rank
+- [ ] Social signals are identical to backlinks
+- [x] Social signals are used to determine topic authority
+- [ ] Social signals proide a benefit only if they have structured data markup
+
+#### Q42. A user clicks an internal link resulting in this redirect chain: `http://domain.com -> https://domain.com -> https://domain.com/`. In this example, what is being consumed unnecessarily?
+- [x] redirect allotment
+- [ ] crawl budget
+- [ ] velocity scale
+- [ ] domain authority
+
+#### Q43. You are planning for the development of an e-commerce website. Which approach will be more beneficial for rankings?
+- [x] Optimize the front page of your website to drive traffic from all category search terms.
+- [ ] Optimize product category pages to drive traffic from individual category search terms.
+- [ ] Optimize all pages on the site for all category search terms.
+- [ ] Optimize product pages to drive traffic from individual category search terms.
+
+#### Q44. You want to block crwlers from accessing your entire website. What robots.txt entry would you use?
+- [ ] 
+   ```
+      User-agent: Allbots
+      Disallow: *
+   ```
+- [ ] 
+   ```
+      User-agent: /
+      Disallow: *
+   ```
+- [ ] 
+   ```
+      User-agent: *
+      Disallow: 
+   ```
+- [x] 
+   ```
+      User-agent: *
+      Disallow: /
+   ```
+
+#### Q45. What is the relationship of click depth to PageRank?
+- [x] The deeper the click depth, the lower the PageRank
+- [ ] PageRank and click depth have no relation
+- [ ] The deeper the click depth, the higher the PageRank
+- [ ] Click depth and PageRank are equal
+
+#### Q46. What is a popular technique for writing content with the goal of having it appear in a features snippet?
+- [ ] Write the question in a headline tag, and then answer it below in a format that matches the snippet type.
+- [ ] Use the features snippet schema and apply an object that matches the correct snippet type.
+- [ ] Google manually generates featured snippets, so there is no special technique.
+- [ ] Submit the content through Google Search Console, and tag it with the correct snippet type.
+
+#### Q47. What is an example of a Google search result that can be found in position zero?
+- [x] Google Ads result
+- [ ] featured snippet
+- [ ] autocomplete
+- [ ] related searches
+
+#### Q48. Which approach is not advisable to geotargeting your website?
+- [ ] using a gTLD with a subdirectory
+- [x] using URL parameters
+- [ ] using a gTLD with subdomain
+- [ ] using a ccTLD
+
+#### Q49. What is a common best practice for handling search result pages on a blog's built-in site search?
+- [ ] Set site research results to no-index.
+- [ ] Do not use site search.
+- [ ] Set site search to 404.
+- [ ] Add a canonical from the search result page to the home page. 

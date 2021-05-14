@@ -1,16 +1,18 @@
 ## Microsoft Outlook
 
 #### 1. What can you set a reminder for in Outlook?
-- [ ] all of these answers
+- [X] all of these answers
 - [ ] contacts
 - [ ] email messages
 - [ ] appointments and meetings
 
 #### 2. What is the default permission that other people in your organization have to your calendar?
-- [ ] none of these answers
+- [X] none of these answers
 - [ ] They can edit.
 - [ ] They can view all details.
 - [ ] They can view titles and locations.
+
+Can view when I'm busy. https://support.microsoft.com/en-us/office/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88
 
 #### 3. Your boss sends you an email with a request to set up a meeting and copies all meeting attendees on the message. What is the fastest way to create the calendar appointment
 - [ ] Click New Items > New Appointment.
@@ -19,7 +21,7 @@
 - [ ] Click Reply All.
 
 #### 4. You are running low on Outlook storage space. How might you address this problem?
-- [ ]  all of these answers
+- [X]  all of these answers
 - [ ] Archive messages you are done with.
 - [ ] Save and then remove large attachments from messages
 - [ ] Sort by size and then delete large messages.
@@ -36,7 +38,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] A,B,and C
 
 #### 6. What address box should you use if you want to hide message recipients from each other?
-- [ ] Bcc
+- [X] Bcc
 - [ ] to
 - [ ] cc
 - [ ] From
@@ -45,13 +47,13 @@ C. Read receipts are expensive, so some organizations turn them off.
 - [ ] to Diane and Joey
 - [ ] to Diane and bcc Joey
 - [ ] to Joey and bcc Diane
-- [ ] to Diane and cc Joey
+- [X] to Diane and cc Joey
 
 #### 8. Which choice is not an attachment?
 - [ ] a PDF document included with an email
 - [ ] a Word document included with an email
 - [ ] (Â) a calendar item included with an email
-- [ ] a hyperlink included in an email
+- [X] a hyperlink included in an email
 
 #### 9. You can use a___to indicate that a message requires further action and a__to organize the message.
 - [ ] folder; category
@@ -177,7 +179,7 @@ C. Read receipts are expensive, so some organizations turn them off.
 
 #### 27. What is the key difference between an appointment and a meeting?
 
-- [ ] A meeting includes other people
+- [X] A meeting includes other people
 - [ ] An appointment is automatically marked as busy while a meeting is marked as tentative
 - [ ] An appointment can be all day, while a meeting has specific start and end time
 - [ ] A meeting has specific start and end times
