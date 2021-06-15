@@ -7,7 +7,7 @@
 - [ ] ls -l
 - [x] blkid
 
-#### Q2. Linux file access control lists (ACLs) are **\_**.
+#### Q2. Linux file access control lists (ACLs) are \_\_\_.
 
 - [x] discretionary access control system permissions layered over standard Linux permissions
 - [ ] mandatory access control system permissions layered over standard Linux permissions
@@ -89,7 +89,7 @@ ps -e --format uid,pid,ppid,%cpu,cmd
 - [ ] !\*
 - [x] !ls
 
-#### Q12. The ssh-copy-id command copies **\_** to the remote host.
+#### Q12. The ssh-copy-id command copies \_\_\_ to the remote host.
 
 - [ ] both private and public keys
 - [x] the ssh public key
@@ -216,7 +216,7 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [x] It has the SUID permission mode and is owned by root.
 - [ ] It is a system administration command.
 
-#### Q29. When a user deletes a file using the rm command, Linux will **\_**.
+#### Q29. When a user deletes a file using the rm command, Linux will \_\_\_.
 
 - [ ] always ask for confirmation
 - [ ] back up the file before it deletes the file
@@ -316,9 +316,9 @@ date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 #### Q39. When configuring a Samba share, how would the engineering group be specified in the smb.conf?
 
 - [ ] Samba uses Linux operating system groups from the /etc/group file; just specify the group name.
-- [x] It would be preceded by a percent sign (%), such as %engineers.
+- [ ] It would be preceded by a percent sign (%), such as %engineers.
 - [ ] Use the group name by itself; Samba checks for its existence.
-- [ ] It would be preceded by an @ symbol, such as @engineering.
+- [x] It would be preceded by an @ symbol, such as @engineering.
 
 #### Q40. To configure the Kerberos client, which command should you use to import the keytab file?
 

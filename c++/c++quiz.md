@@ -13,7 +13,7 @@ printf("%d", !b);
 - [x] 1
 - [ ] This code has an error.
 
-#### Q2. Which of the following is a reason why using this line is considered a bad practice? (*Alternative*: Why is using this line considered a bad practice?)
+#### Q2. Which of the following is a reason why using this line is considered a bad practice? (_Alternative_: Why is using this line considered a bad practice?)
 
 ```cpp
 Using namespace std;
@@ -77,6 +77,8 @@ int median(const my_array& a);
 - [ ] Actually objects can't be passed as regular variables because they require a constructor call. Therefore a const reference is the only way to pass class instances to functions.
 - [ ] There are no benefits because a reference and an object are treated as the same thing.
 
+[Reference](https://stackoverflow.com/a/2627179/10773894)
+
 #### Q7. What's the storage occupied by u1?
 
 ```cpp
@@ -112,7 +114,7 @@ v2->push_back(5);
 ```
 
 - [ ] `*v1:{1,2,3,4}; *v2:{5};`
-- [x] `*v1:{1,2,3,4'5}; *v2:{1,2,3,4,5};`
+- [x] `*v1:{1,2,3,4,5}; *v2:{1,2,3,4,5};`
 - [ ] Error
 - [ ] `*v1:{1,2,3,4}; *v2:{1,2,3,5};`
 
@@ -121,7 +123,7 @@ v1 and v2 point to the same vector.
 #### Q10. Which of the following is not a difference between a class and a struct?
 
 - [ ] Because structs are part of the C programming language, there are some complexity between C and C++ structs. This is not the case with classes.
-- [ X ] Classes may have member functions; structs are private.
+- [x] Classes may have member functions; structs are private.
 - [ ] The default access specifier for members of struct is public, whereas for member of class, it is private.
 - [ ] Template type parameters can be declared with classes, but not with the struct keyword.
 
@@ -138,8 +140,9 @@ typedef struct {
     // more days
     int friday:1;
     int saturday:1;
-} weekdays; << Correct  That syntax says that each variable size is 1 bit. 'bit' is not a type in C++.
+} weekdays;
 ```
+
 - [ ] B
 
 ```cpp
@@ -171,7 +174,7 @@ typedef struct {
 } weekdays;
 ```
 
-[Reference](https://en.cppreference.com/w/cpp/language/bit_field)
+_NOTE_: Correct syntax is that each variable size is 1 bit. `bit` is not a type in C++. [Reference](https://en.cppreference.com/w/cpp/language/bit_field)
 
 #### Q12. What is an lvalue?
 
@@ -226,13 +229,13 @@ int main(){
 ```
 
 - [ ] `x = 10 and y = 20`  
-    `x = 11 and y = 19`
+       `x = 11 and y = 19`
 - [ ] `x = 11 and y = 19`  
-    `x = 10 and y = 20`
+       `x = 10 and y = 20`
 - [x] `x = 10 and y = 19`  
-    `x = 11 and y = 20`
+       `x = 11 and y = 20`
 - [ ] `x = 11 and y = 20`  
-    `x = 10 and y = 19`
+       `x = 10 and y = 19`
 
 #### Q17. What is the meaning of the two parts specified between parentheses in a range-based for loop, separated by a colon?
 
@@ -248,7 +251,7 @@ int8_t a=200;
 uint8_t b=100;
 if(a>b)
     std::cout<<"greater";
-else 
+else
     std::cout<<"less";
 ```
 
@@ -261,10 +264,10 @@ else
 
 ```cpp
 int x=5, y=2;
-if(x & y) { 
-    /*_part A_*/ 
-} 
-else { 
+if(x & y) {
+    /*_part A_*/
+}
+else {
     /*_part B_*/
 }
 ```
@@ -292,7 +295,7 @@ int get_length(char *str) {
 int get_length(char *str) {
     int count=0;
     while(str!=NULL){
-        count++; 
+        count++;
         str++;
     }
     return count;
@@ -305,7 +308,7 @@ int get_length(char *str) {
 int get_length(char *str) {
     int count=0;
     while((*str)++)
-        count++; 
+        count++;
     return count;
 }
 ```
@@ -316,8 +319,8 @@ int get_length(char *str) {
 int get_length(char *str) {
     int count=0;
     while(str++)
-        count++; 
-    return count; 
+        count++;
+    return count;
 }
 ```
 
@@ -393,7 +396,7 @@ printf("1/2 = %f",(float)(1/2));
 - [ ] Public members will be compiled as shared variables in a multithreaded environment. Private members will be compiled as Thread-local variables.
 - [x] Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class.
 
-#### Q28. What is the value of x after running this code?
+#### Q28. What is the value of `x` after running this code?
 
 ```cpp
 int x=10, a=-3;
@@ -476,7 +479,7 @@ c = *(str[5]);
 c = buff+16;
 c = str+5;
 ```
- 
+
 #### Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?
 
 ```cpp
@@ -485,7 +488,7 @@ class Animal{
 }
 ```
 
-- [x] A
+- [ ] A
 
 ```cpp
 class Dog :: public Animal {
@@ -493,7 +496,7 @@ class Dog :: public Animal {
 };
 ```
 
-- [ ] B
+- [x] B
 
 ```cpp
 class Dog : public Animal {
@@ -613,7 +616,7 @@ while(i<10){
 ```cpp
 for (int i:{1,2,3,4,5,6,7,8,9}) {
     cout<<i<<endl;
-} 
+}
 ```
 
 - [ ] C
@@ -863,7 +866,7 @@ int main(){
 
 [Reference](https://en.cppreference.com/w/cpp/header/fstream)
 
-#### Q49. Which of the following is *not* a consequence of declaring the member variable count of my_class as static?
+#### Q49. Which of the following is _not_ a consequence of declaring the member variable count of my_class as static?
 
 ```cpp
 class my_class {
@@ -979,6 +982,7 @@ A->B->C->D
 auto buff = new char[50];
 std::memset(buff,20,50);
 ```
+
 - [ ] It declares a memory buffer named buff that starts at address 20 and ends at address 70.
 - [ ] It sets all bits in the array named buffer from its element at index 20 to its element at index 50.
 - [x] It writes the value 20 in every memory address from buff to buff+49.
@@ -995,105 +999,122 @@ std::memset(buff,20,50);
 
 [Reference](https://en.cppreference.com/w/cpp/language/operators)
 
-#### Q59. Which choice is not a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named center?
-
-```cpp
-coord center;
-center.x = 9;
-center.y = 3;
-```
-
-- [ ] A
-```cpp
- struct coord{
-    int x;
-    int y;
-};
-typedef struct coord coord;
-```
-- [ ] B
-```cpp
- typedef struct coord{
-    int x;
-    int y;
-} coord;
-```
-- [x] C
-```cpp 
-typedef struct coord{
-    int x;
-    int y;
-};
-```
-- [ ] D
-```cpp 
-typedef struct{
-    int x;
-    int y;
-} coord;
-```
-[Reference](https://stackoverflow.com/questions/18806392/typedef-struct-declarations/18806720)
-
-#### Q60. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?
+#### Q59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?
 
 ```cpp
 std::array<uint32_t, 50> my_array;
 ```
 
 - [x] A
+
 ```cpp
 std::sort(my_array.begin(), my_array.end(),
     [](uint32_t a, uint32_t b) {
         return a < b;
     })
 ```
+
 - [ ] B
+
 ```cpp
 lambda(uint32_t a, uint32_t b){
     return a < b;
 }
 std::sort(my_array.begin(), my_array.end(), lambda);
 ```
+
 - [ ] C
-```cpp 
+
+```cpp
 std::sort(my_array.begin(), my_array.end(),
     lambda(uint32_t a, uint32_t b){
         return a < b;
     })
 ```
+
 - [ ] D
-```cpp 
+
+```cpp
 lambda(uint32_t a, uint32_t b){
     return a < b;
 }
 std::sort(my_array.begin(), my_array.end(), &lambda);
 ```
+
 [Reference](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160)
 
-#### Q61. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?
+#### Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?
 
-- [ ] A
+- [x] A
+
 ```cpp
 void std::mutex::lock(){
     while(!this->try_lock());
 }
 ```
+
 - [ ] B
+
 ```cpp
 void std::mutex::lock(){
     return (this->try_lock());
 }
 ```
+
 - [ ] C
+
 ```cpp
 void std::mutex::lock(){
     while(1)
         this->try_lock();
 }
 ```
+
 - [ ] D
+
 ```cpp
 void std::mutex::lock(){
     while(this->try_lock());
 }
 ```
+
+#### Q61. What is the purpose of a destructor?
+
+- [x] It allows the programmer to write the necessary code to free the resources acquired by the object prior to deleting the object itself.
+- [ ] It deletes an object. One example of a destructor is the `delete()` function.
+- [ ] It terminates a program. This may be achieved as a regular function call or as an exception.
+- [ ] There are no destructors in C++.
+
+#### Q62. Which STL class is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have lookup by name.
+
+- [] std::priority_queue
+- [x] std::map
+- [] std::vector
+- [] std::list
+
+#### Q63. What is the main difference between these two Functions?
+
+```cpp
+std::mutex::lock()
+std::mutex::try_lock()
+```
+
+- [ ] `lock()` has a higher privilege over `try_lock()`. This means that you have a better chance of acquiring a mutex `with lock()`.
+- [x] Both attempt to acquire a lock, but `lock()` blocks if the mutex is not available, whereas `try_lock()` returns whether the mutex is available or not.
+- [ ] `lock()` enforces preemption, whereas `try_lock()` suggests preemption.
+- [ ] If the mutex is not available, `try_lock()` returns with a corresponding code, whereas `lock()` snatches the mutex from the thread that currently has it.
+
+[Reference](https://en.cppreference.com/w/cpp/thread/mutex/try_lock)
+
+#### Q64. What is one benefit of declaring the parameter as a `const` reference instead of declaring it as a regular object?
+
+```cpp
+int median(const my_array& a)
+```
+
+- [ ] Actually, objects cannot be passed as regular variables, because they require a constructor call. Therefore, a `const` reference is the only way to pass class instances to functions.
+- [ ] There are no benefits because a reference and an object are treated as the same thing.
+- [x] The `const` qualifier Forbids the code to modify the argument, so the programmer can rest assured that the source object will remain unchanged.
+- [ ] The argument is passed as a reference, so the Function receives a copy that can be modified without affecting the original variable.
+
+Note: This one is similar to Q6, but focuses on the `const` keyword.
